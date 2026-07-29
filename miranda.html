@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Miranda- Subir Archivo</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f2f2f2;
+      margin-top: 60px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .btn {
+      padding: 15px;
+      width: 200px;
+      border: none;
+      border-radius: 8px;
+      background: #2d6cdf;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background: #1b4fb3;
+    }
+
+      /* Estilos para que las tablas de Python se vean ordenadas y estéticas */
+    #resultado {
+      margin: 40px auto;
+      max-width: 90%;
+      text-align: left;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .back {
+      margin-top: 20px;
+      display: block;
+      color: #333;
+      text-decoration: none;
+
+      table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+     th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2d6cdf;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      color: #2d6cdf;
+      border-bottom: 2px solid #2d6cdf;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+
+
+
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SUBIR ARCHIVO - Miranda Hendricks (Estados Unidos, Canada) </h1>
+   <form enctype="multipart/form-data">
+     <input type="file" name="file" required>
+     <br><br>
+     <button type="button" id="btnSubir">Subir archivo</button>
+   </form>
+
+  <div id="resultado" style="display: none;"></div>
+  
+  <br><br>
+  <a href="index.html"> Volver</a>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba Individual - Suresh 2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #eef2f7;
+      margin-top: 50px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .contenedor-prueba {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+      width: 450px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #34495e;
+      font-size: 16px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    button {
+      padding: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background: #27ae60;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #219653;
+    }
+
+    #resultado {
+      margin-top: 25px;
+      padding: 15px;
+      border-radius: 6px;
+      background: #f8f9fa;
+      border-left: 5px solid #27ae60;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Control de Pruebas: Módulo Suresh</h1>
+
+  <div class="contenedor-prueba">
+    <form id="formIndividual" onsubmit="return false;">
+      <label for="archivoExcel">Selecciona el Reporte de Suresh (2026):</label>
+      <input type="file" id="archivoExcel" accept=".xlsx, .xls" required>
+      <button type="button" id="btnSubir">Procesar Archivo Único</button>
+    </form>
+
+    <div id="resultado" style="display: none;"></div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
+
+
